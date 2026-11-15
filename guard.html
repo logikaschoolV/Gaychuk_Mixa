@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steam - Guard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Увімкнено десктоп за замовчуванням (checked на mode-desktop) -->
+  <input type="radio" name="device-mode" id="mode-mobile" class="device-radio">
+  <input type="radio" name="device-mode" id="mode-tablet" class="device-radio">
+  <input type="radio" name="device-mode" id="mode-desktop" class="device-radio" checked>
+    <div class="prototype-wrapper">
+
+  <div class="top-control-bar">
+    <div class="proto-title"><span>⚙️</span> Steam UI Prototype</div>
+    <div class="device-switcher">
+      <label for="mode-mobile" class="device-btn">iPhone 17 Pro</label>
+      <label for="mode-tablet" class="device-btn">Планшет</label>
+      <label for="mode-desktop" class="device-btn">Десктоп</label>
+    </div>
+  </div>
+
+  <div class="app-frame" id="appFrame">
+    
+    <header class="app-header">
+      <div class="app-logo">🎮 STEAM</div>
+      <div style="flex:1;"></div>
+      <div class="user-badge">UA</div>
+    </header>
+
+    <main class="main-body">
+      <div class="section-heading" style="text-align: center;">Безпека акаунта</div>
+
+      <div class="guard-box">
+        <svg class="guard-shield" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+        </svg>
+        <div style="font-size: 14px; font-weight: bold;">Steam Guard</div>
+        <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">Введіть цей код на ПК для входу:</div>
+        
+        <div class="guard-code">K7X9P</div>
+      </div>
+    </main>
+
+    <nav class="bottom-navbar">
+      <a href="index.html" class="nav-btn">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        Магазин
+      </a>
+      <a href="news.html" class="nav-btn">
+        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+        Новини
+      </a>
+      <a href="guard.html" class="nav-btn active">
+        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+        Guard
+      </a>
+      <a href="#" class="nav-btn">
+        <svg viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"/></svg>
+        Сповіщення
+      </a>
+      <a href="#" class="nav-btn">
+        <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        Меню
+      </a>
+    </nav>
+
+  </div>
+
+</body>
+</html>
